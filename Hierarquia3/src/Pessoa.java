@@ -16,7 +16,6 @@ import javax.persistence.InheritanceType;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "LuLu", length = 1, discriminatorType = DiscriminatorType.STRING)
-@DiscriminatorValue("P")
 public class Pessoa implements Identificavel {
 
 	Scanner sc = new Scanner(System.in);
