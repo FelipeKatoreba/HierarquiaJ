@@ -28,8 +28,16 @@ public class Pessoa implements Identificavel {
 		@Column(insertable=false, updatable=false)
 		private int cpf;
 		private Date dataNasc;
-
+		private int tipo;
 	
+
+	public int getTipo() {
+			return tipo;
+		}
+
+		public void setTipo(int tipo) {
+			this.tipo = tipo;
+		}
 
 	public Long getId() {
 			return id;
@@ -63,10 +71,6 @@ public class Pessoa implements Identificavel {
 		this.dataNasc = dataNasc;
 	}
 	
-	
-	
-
-
 }
 	
 	
