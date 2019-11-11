@@ -8,6 +8,7 @@ public class Aluno extends Pessoa{
 	Long idMatricula;
 	String nome;
 	String curso;
+	long inicio = System.currentTimeMillis();
 
 	public String getCurso() {
 		return curso;
